@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: beige;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+}
+ul li{
+   font-size: 18px;
+}
+a:hover{
+       color: orange;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+header{
+    padding: 30px;
+}
+.head{
+    height: 40px;
+}
+.header-text{
+    margin-top: 5%;
+    font-size: 25px;
+    padding-left: 80px;
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+
+}
+.header-text span{
+     color:aqua
+}
+
+.me{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.meee{
+    padding-left: 20px;
+}
+.sec-1{
+    padding: 60px;
+}
+.sec-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec-4 h1{
+     font-size: 40px;
+     color: aqua;
+}
+.sec-4 p{
+    font-size: 25px;
+}
+.sec-3{
+    width: 50%;
+}
+.sec-4{
+    width: 50%;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+   margin-right: 50px;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+}
+.tab-links::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #0000FF;
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+}
+.tab-links.active-link::after{
+   width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 0; /* Space between each list item */
+    display: block; /* Ensure vertical stacking */
+    line-height: 1.5; /* Optional: improve readability */
+   
+}
+.tab-contents ul li span{
+    display: block; /* Place the span on a new line */
+    color: #0000FF; /* Blue color for span text */
+    font-size: 14px; /* Smaller font for the span */
+    font-weight: bold; /* Make the span bold */
+    margin-bottom: 5px; /* Add space below the span */
+   
+}
+.tab-contents {
+   display: none; 
+} 
+.tab-contents.active-tab{
+   display: block;
+}
+
+.tab-contents ul {
+    list-style: none;
+    padding: 0;
+}
+#porfolio{
+    padding: 50px 0;
+}
+.work-list{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px; 
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #641a32);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background:  #fff;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: 'background 0.5s';
+}
+.btn:hover{
+    background: #ff004f;
+}
+.sec-5{
+    padding: 60px;
+}
+
+
+
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Ensure even spacing between left and right */
+    align-items: center; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 50px;
+}
+
+
+.contact-left {
+    flex-basis: 35%;
+    margin-bottom: 20px; /* Space between items on smaller screens */
+    padding-left: 50px;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+ }
+ .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+ }
+ 
+ .social-icons{
+    margin-top: 30px;
+ }
+ .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+ }
+ .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+ }
+ .btn.btn2{
+    display:inline-block;
+    background: #ff004f;
+ }
+ .contact-right form{
+    width: 100%;
+ }
+ form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+ }
+ form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+ .copyright{
+    width:100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+ }
+ .copyright i{
+    color: #ff004f;
+ }
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+
+

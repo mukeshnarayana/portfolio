@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/585cef2783.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-text" id="home">
+            <h1>Hello, <span>'m Mukesh Narayana</span></h1>
+            <p>
+                I'm a Recently Graduated with a passion for web development and UI/UX design.<br/>
+                Versatile and hardworking IT professional with a strong dedication to success,<br/>
+                I bring a logical approach, regulatory abilities, and proficiency in various<br/>
+                programming languages and technologies. I am seeking opportunities to apply my skills.
+            </p>
+        </div>
+    </header>
+    <section class="sec-1">
+        <div class="sec-2" id="about">
+            <div class="sec-3">
+                <img src="person.jpg" alt="Profile Image"/>
+            </div>
+            <div class="sec-4">
+                <h1>About Me</h1>
+                <p>
+                    Versatile and hardworking IT professional with a strong dedication to success, 
+                    Possesses logical approach, regulatory abilities, and proficiency in various 
+                    programming languages and technologies. Actively seeking opportunities to apply 
+                    my skills and contribute to impactful projects.
+                </p>
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <strong>Web Technologies:</strong> HTML, CSS, Bootstrap5, JavaScript, ReactJS (with Hooks), Git, Lint, Postman, npm, Jest, Docker.<br/>
+                            <strong>Programming Languages:</strong> Python, C<br/>
+                            <strong>Database: </strong> MySQL<br/>
+                            <strong>Design tools:</strong> Figma<br/>
+                            <strong>Software Tools:</strong> Vs Code, Notepad++
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jan 2024 - Feb 2024</span><br>UI/UX design intern at CodesOnBytes</li>
+                        <li><span>Feb 2024 - Feb 2024</span><br>Web Development intern at CodeAlpha</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>B.E-CSE from R.M.D Engineering College, Chennai</li>
+                        <li><span>2020</span><br>12th-PMC from Viswasai Junior College, Nellore</li>
+                        <li><span>2018</span><br>10th standard from Rantam High School, Buchi Reddy Palem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-5">
+        <div id="Portfolio">
+            <div class="container" id="projects">
+                <h1 class="sub-title">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.png">
+                        <div class="layer">
+                            <h3>Exploring The Dynamic Tapestry <br/>Of Student Dropout <br/>In School Education</h3>
+                            <p>Developed a machine learning model <br/>using academic, demographic, <br/>and socio-economic data <br/>to predict student dropout</p>
+                            <a href="https://github.com/mukeshnarayana"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-2.png">
+                        <div class="layer">
+                            <h3>Amazon Clone</h3>
+                            <p>Built a responsive Amazon clone using <br/>HTML, CSS, Bootstrap
+                                Integrated modern <br/>UI elements, including a navbar and <br/>hover effects for enhanced user <br/>interaction
+                                Ensured cross-browser <br/>compatibility and optimized the design <br/>for various screen sizes to improve
+                                accessibility</p>
+                            <a href="https://github.com/mukeshnarayana"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png">
+                        <div class="layer">
+                            <h3> Banking Dashboard Website</h3>
+                            <p>Developed a responsive Banking Dashboard<br/> Website using HTML, CSS, JS, Bootstrap,<br/> React JS
+                                 Implemented component-based <br/>architecture, including separate components <br/>for login, signup, Header,
+                                sidebar, and<br/> dashboard
+                                Centralized dynamic data <br/>management with data.js and enhanced user<br/>experience using React Hooks and
+                                <br/>Hash Router for efficient state management <br/>and navigation
+                                </p>
+                            <a href="https://github.com/mukeshnarayana"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png">
+                        <div class="layer">
+                            <h3>Python Project to Convert PDF File Text to Speech</h3>
+                            <p>Designed a Python-based project to convert PDF text to audio speech
+                            Utilized text–to–speech algorithms to develop software capable of detecting and converting text into speech</p>
+                            <a href="https://github.com/mukeshnarayana"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </section>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mukeshpabolu123@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8374831031</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/pabolu-mukesh-narayana-4a3742224/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mukeshnarayana"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="MUKESH_RESUME_.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Mukesh. Made with<i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
